@@ -1,0 +1,235 @@
+:root {
+    /* Bg Utama */
+    --c1: #fffafa;
+    /* Bg Kedua */
+    --c2: #3e3e3e;
+    /* Warna Utama */
+    --c3: #2e8b57;
+    --c4: #eaf3ee;
+    --c5: #81b99a;
+    --c6: #1b5334;
+    --c7: #555555;
+    --c8: #000000;
+}
+
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    color: var(--c2);
+}
+
+a {
+    color: var(--c3);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--c5);
+    }
+}
+
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c3);
+
+    &:hover {
+        background-color: var(--c7);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+body {
+    max-width: 450px;
+    box-shadow: 0 0 0.25em 0 var(--c3);
+
+    .logo {
+        /* height: 100px; */
+        background-color: var(--c1);
+        display: flex;
+        justify-content: center;
+        padding: 2em;
+
+        a {
+            color: var(--c8);
+        }
+
+        img {
+            max-width: 400px;
+            max-height: 200px;
+        }
+    }
+
+    .header {
+        background-color: #2e8b57;
+
+        a {
+            color: snow;
+            text-decoration: none;
+
+            :hover {
+                color: #fffafacc;
+            }
+        }
+
+        .nav {
+            padding: 0.5em 0;
+            display: flex;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+    }
+
+
+    .main {
+        padding: 1em;
+        text-align: justify;
+
+        img {
+            display: flex;
+            justify-content: center;
+            max-width: 400px;
+
+            svg {
+                display: flex;
+                justify-content: center;
+                max-width: 200px;
+            }
+
+        }
+
+        p {
+            padding: .25em 0;
+            text-indent: 3em;
+        }
+
+        .fitur {
+            display: flex;
+            gap: 1em;
+            
+            p {
+                max-width: 285px;
+            }
+            
+            svg {
+                width: 150px;
+                padding: 1em 0;
+            }
+            
+            ul {
+                transition: 0.5s ease;
+
+                :hover {
+                    transform: translateY(-0.25em);
+                }
+
+                li {
+                    margin: 1em 0;
+                    padding: 0 1em;
+                    display: flex;
+                    gap: 1em;
+                    background-color: #2e8b5733;
+                    border-radius: 0.25em;
+
+
+                    &:nth-child(even) {
+                        background-color: #2e8b5711;
+                    }
+
+                }
+            }
+        }
+
+        .daftar-toko {
+            ul {
+                margin: 0em;
+                padding: .25em 0;
+
+                li {
+                    /* padding: .25em 0em .25em 1em; */
+                    display: flex;
+                    height: 3em;
+                    list-style: inside;
+                    background-color: #2e8b5733;
+
+                    &:nth-child(even) {
+                        background-color: #2e8b5711;
+                    }
+
+                    a {
+                        display: inline;
+                        width: 100%;
+                        padding: .85em 1em;
+                        height: auto;
+                        transition: .3s ease-in;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: var(--c2);
+                            transform: translateY(1px);
+                        }
+
+                        &:active {
+                            transform: translateY(0px);
+                            transition: 0s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-bot {
+        width: 434.25px;
+        border-top: #2e8b5755 solid 1px;
+        padding: .75em .5em;
+        bottom: 2.30em;
+        background-color: snow;
+    }
+
+    .footer {
+        background-color: seagreen;
+        text-align: center;
+        color: snow;
+        /* position: fixed; */
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 450px;
+        padding: 0.5em 0;
+        box-shadow: #2e8b57 0 0 0.25em 0;
+
+        a {
+            color: snow;
+            margin: 0 .35em;
+            font-weight: 700;
+        }
+    }
+
+
+    h4 {
+        margin: 0 0 1em 0;
+        padding: 0.5em 1em;
+        border: 1px solid seagreen;
+        border-left: .75em solid seagreen;
+        font-style: italic;
+    }
+
+    .marketin {
+        color: seagreen;
+    }
+
+
+    hr {
+        margin: .5em auto;
+        border-top: var(--c5) solid 1px;
+    }
+}
