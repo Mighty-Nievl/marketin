@@ -94,7 +94,7 @@ body {
             justify-content: center;
             max-width: 200px;
         }
-        
+
         svg {
             display: flex;
             justify-content: center;
@@ -183,7 +183,7 @@ body {
 
     .nav-bot {
         width: 434.25px;
-        border-top: var(--c5); solid 1px;
+        border-top: var(--c5) solid 1px;
         padding: .75em .5em;
         bottom: 2.30em;
         background-color: snow;
