@@ -96,14 +96,13 @@ body {
         img {
             display: flex;
             justify-content: center;
-            max-width: 400px;
-
-            svg {
-                display: flex;
-                justify-content: center;
-                max-width: 200px;
-            }
-
+            max-width: 200px;
+        }
+        
+        svg {
+            display: flex;
+            justify-content: center;
+            max-width: 200px;
         }
 
         p {
@@ -114,16 +113,16 @@ body {
         .fitur {
             display: flex;
             gap: 1em;
-            
+
             p {
                 max-width: 285px;
             }
-            
+
             svg {
                 width: 150px;
                 padding: 1em 0;
             }
-            
+
             ul {
                 transition: 0.5s ease;
 
