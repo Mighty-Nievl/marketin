@@ -1,9 +1,6 @@
 :root {
-    /* Bg Utama */
     --c1: #fffafa;
-    /* Bg Kedua */
     --c2: #3e3e3e;
-    /* Warna Utama */
     --c3: #2e8b57;
     --c4: #eaf3ee;
     --c5: #81b99a;
@@ -51,7 +48,6 @@ body {
     box-shadow: 0 0 0.25em 0 var(--c3);
 
     .logo {
-        /* height: 100px; */
         background-color: var(--c1);
         display: flex;
         justify-content: center;
@@ -68,10 +64,10 @@ body {
     }
 
     .header {
-        background-color: #2e8b57;
+        background-color: var(--c3);
 
         a {
-            color: snow;
+            color: var(--c1);
             text-decoration: none;
 
             :hover {
@@ -153,7 +149,6 @@ body {
                 padding: .25em 0;
 
                 li {
-                    /* padding: .25em 0em .25em 1em; */
                     display: flex;
                     height: 3em;
                     list-style: inside;
@@ -188,23 +183,22 @@ body {
 
     .nav-bot {
         width: 434.25px;
-        border-top: #2e8b5755 solid 1px;
+        border-top: var(--c5); solid 1px;
         padding: .75em .5em;
         bottom: 2.30em;
         background-color: snow;
     }
 
     .footer {
-        background-color: seagreen;
+        background-color: var(--c3);
         text-align: center;
         color: snow;
-        /* position: fixed; */
         bottom: 0;
         display: flex;
         justify-content: center;
         width: 450px;
         padding: 0.5em 0;
-        box-shadow: #2e8b57 0 0 0.25em 0;
+        box-shadow: var(--c3) 0 0 0.25em 0;
 
         a {
             color: snow;
@@ -217,13 +211,13 @@ body {
     h4 {
         margin: 0 0 1em 0;
         padding: 0.5em 1em;
-        border: 1px solid seagreen;
-        border-left: .75em solid seagreen;
+        border: 1px solid var(--c3);
+        border-left: .75em solid var(--c3);
         font-style: italic;
     }
 
     .marketin {
-        color: seagreen;
+        color: var(--c3);
     }
 
 
