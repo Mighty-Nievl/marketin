@@ -1,30 +1,26 @@
 <?php
 $title = 'Dashboard';
 include('inc/header.php');
+include('../marketin/inc/dashboard/dataToko.php');
 ?>
 
+<h4>
+    Dashboad utama
+</h4>
 
-Ini adalah Dashboad utamamu
-<br><br>
+<p>
+    Berikut daftar toko milikmu
+</p>
 
-Berikut daftar toko milikmu
 <div class="daftar-toko">
     <ul>
-        <li>
-            <a href="">
-                Karunia Indah
-            </a>
-        </li>
-        <li>
-            <a href="">
-                Damai Sejahtera
-            </a>
-        </li>
-        <li>
-            <a href="">
-                Gagah Jaya
-            </a>
-        </li>
+        <?php foreach ($daftarToko as $dt) : ?>
+            <li>
+                <a href="">
+                    <?= $dt; ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
     </ul>
 </div>
 
