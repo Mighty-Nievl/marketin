@@ -29,7 +29,7 @@ include('../header.php');
 ?>
 
 <div class="detail-toko">
-    <b>Detail Toko <?= $_GET['Toko']; ?><br></b>
+    <h4>Detail Toko <?= $_GET['Toko']; ?><br></h4>
     Nama Toko : <b><?= $_GET['NamaToko'] ?></b><br>
     Jenis Toko : <?= $_GET['JenisToko'] ?><br>
     Pemilik Toko : <?= $_GET['PemilikToko'] ?><br>
