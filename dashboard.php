@@ -1,25 +1,25 @@
 <?php
 $title = 'Dashboard';
-
+include('inc/db.php');
 include('./inc/header.php');
-include('./inc/dashboard/dataToko.php');
 ?>
 
 <h4>Dashboad utama</h4>
-
 <p>Berikut daftar toko milikmu</p>
-
 <div class="daftar-toko">
-    <?php foreach($toko as $t) : ?>
     <ul>
+        <?php while( $tabel = mysqli_fetch_assoc($result) ) : ?>
         <li>
             <a
-                href="./inc/dashboard/detailToko.php?Toko=<?= $t['Toko']; ?>&NamaToko=<?= $t['NamaToko']; ?>&JenisToko=<?= $t['JenisToko']; ?>&PemilikToko=<?= $t['PemilikToko']; ?>">
-                <?= $t['NamaToko']; ?>
+                href="./inc/dashboard/detail.php?id=<?= $tabel['id']; ?>&Urutan=<?= $tabel['Urutan']; ?>&Nama=<?= $tabel['Nama']; ?>&Jenis=<?= $tabel['Jenis']; ?>&Pemilik=<?= $tabel['Pemilik']; ?>">
+                <?= $tabel['Nama']; ?>
             </a>
         </li>
+        <?php 
+    // break; 
+endwhile; 
+?>
     </ul>
-    <?php endforeach; ?>
 </div>
 
 <?php include('inc/footer.php'); ?>

@@ -1,24 +1,13 @@
 <?php
+$tabel = mysqli_fetch_assoc($result);
+?>
 
-$namaToko = ["Karunia Abadi", "Damai Sejahtera", "Wulan Fashion"];
+<a
+    href="./inc/dashboard/detailToko.php?Toko=<?= $tabel['Toko']; ?>&NamaToko=<?= $tabel['NamaToko']; ?>&JenisToko=<?= $tabel['JenisToko']; ?>&PemilikToko=<?= $tabel['PemilikToko']; ?>">
+    <?= $tabel['NamaToko']; ?>
+</a>
 
-$toko = [
-    [
-        'Toko' => 'Pertama',
-        'NamaToko' => $namaToko[0],
-        'JenisToko' => 'Bangunan',
-        'PemilikToko' => 'RezalH'
-    ],
-    [
-        'Toko' => 'Kedua',
-        'NamaToko' => $namaToko[1],
-        'JenisToko' => 'Elektronik',
-        'PemilikToko' => 'Totok AN'
-    ],
-    [
-        'Toko' => 'Ketiga',
-        'NamaToko' => $namaToko[2],
-        'JenisToko' => 'Fashion',
-        'PemilikToko' => 'Wulan'
-    ],
-];
+Toko <?= $tabel['Urutan'] ?>mu <br>
+Nama Toko : <?= $tabel['Nama'] ?> <br>
+Jenis Toko : <?= $tabel['Jenis'] ?> <br>
+Pemilik Toko : <?= $tabel['Pemilik'] ?> <br>
