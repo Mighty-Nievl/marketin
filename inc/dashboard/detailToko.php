@@ -1,19 +1,39 @@
 <?php
-include('./inc/header.php');
+
 $title = 'Detail Toko';
-// include('./inc/dashboard/dataToko.php');
+
+$namaToko = ["Karunia Indah", "Damai Sejahtera", "Wulan Fashion"];
+
+$toko = [
+    [
+        'Toko' => 'Pertama',
+        'NamaToko' => $namaToko[0],
+        'JenisToko' => 'Bangunan',
+        'PemilikToko' => 'RezalH'
+    ],
+    [
+        'Toko' => 'Kedua',
+        'NamaToko' => $namaToko[1],
+        'JenisToko' => 'Elektronik',
+        'PemilikToko' => 'Totok AN'
+    ],
+    [
+        'Toko' => 'Ketiga',
+        'NamaToko' => $namaToko[2],
+        'JenisToko' => 'Fashion',
+        'PemilikToko' => 'Wulan'
+    ],
+];
+
+include('../header.php');
 ?>
 
 <div class="detail-toko">
-    <b>Detail</b>
-    <b>Toko <?= $_GET["Toko"]; ?></b>
-    <?php foreach($toko as $t) : ?>
-    <ul>
-        <li>Nama Toko : <?= ($t['NamaToko']); ?></li>
-        <li>Jenis Toko : <?= ($t["JenisToko"]); ?></li>
-        <li>Pemilik Toko: <?= ($t['PemilikToko']); ?></li>
-    </ul>
-    <?php endforeach; ?>
+    <b>Detail Toko <?= $_GET['Toko']; ?><br></b>
+    Nama Toko : <b><?= $_GET['NamaToko'] ?></b><br>
+    Jenis Toko : <?= $_GET['JenisToko'] ?><br>
+    Pemilik Toko : <?= $_GET['PemilikToko'] ?><br>
 </div>
 
-<?php include('../footer.php') ?>
+<?php 
+include('../footer.php') ?>

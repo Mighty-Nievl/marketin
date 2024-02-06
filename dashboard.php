@@ -13,15 +13,16 @@ include('./inc/dashboard/dataToko.php');
 </p>
 
 <div class="daftar-toko">
+    <?php foreach($toko as $t) : ?>
     <ul>
-        <?php foreach ($toko as $t) : ?>
         <li>
-            <a href="./inc/dashboard/detailToko.php?Toko=<?= $t['Toko'] ?>">
+            <a
+                href="./inc/dashboard/detailToko.php?Toko=<?= $t['Toko']; ?>&NamaToko=<?= $t['NamaToko']; ?>&JenisToko=<?= $t['JenisToko']; ?>&PemilikToko=<?= $t['PemilikToko']; ?>">
                 <?= $t['Toko']; ?>
             </a>
         </li>
-        <?php endforeach; ?>
     </ul>
+    <?php endforeach; ?>
 </div>
 
 <?php include('inc/footer.php'); ?>
