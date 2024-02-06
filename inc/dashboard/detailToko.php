@@ -1,5 +1,14 @@
 <?php
 $title = 'Detail Toko';
+
+if( !isset($_GET['Toko']) ||
+    !isset($_GET['NamaToko']) ||
+    !isset($_GET['JenisToko']) ||
+    !isset($_GET['PemilikToko'])) {
+    header('Location: ../X');
+    exit;
+}
+
 include('./dataToko.php');
 include('../header.php');
 ?>

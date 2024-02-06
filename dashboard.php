@@ -1,5 +1,6 @@
 <?php
 $title = 'Dashboard';
+
 include('./inc/header.php');
 include('./inc/dashboard/dataToko.php');
 ?>
@@ -12,11 +13,8 @@ include('./inc/dashboard/dataToko.php');
     <?php foreach($toko as $t) : ?>
     <ul>
         <li>
-            <a href="./inc/dashboard/detailToko.php?
-                Toko=<?= $t['Toko']; ?>&
-                NamaToko=<?= $t['NamaToko']; ?>&
-                JenisToko=<?= $t['JenisToko']; ?>&
-                PemilikToko=<?= $t['PemilikToko']; ?>">
+            <a
+                href="./inc/dashboard/detailToko.php?Toko=<?= $t['Toko']; ?>&NamaToko=<?= $t['NamaToko']; ?>&JenisToko=<?= $t['JenisToko']; ?>&PemilikToko=<?= $t['PemilikToko']; ?>">
                 <?= $t['NamaToko']; ?>
             </a>
         </li>

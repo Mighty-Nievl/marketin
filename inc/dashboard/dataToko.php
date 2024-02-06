@@ -1,6 +1,6 @@
 <?php
 
-$namaToko = ["Karunia Indah", "Damai Sejahtera", "Wulan Fashion"];
+$namaToko = ["Karunia Abadi", "Damai Sejahtera", "Wulan Fashion"];
 
 $toko = [
     [
