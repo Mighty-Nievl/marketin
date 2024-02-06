@@ -1,30 +1,6 @@
 <?php
-
 $title = 'Detail Toko';
-
-$namaToko = ["Karunia Indah", "Damai Sejahtera", "Wulan Fashion"];
-
-$toko = [
-    [
-        'Toko' => 'Pertama',
-        'NamaToko' => $namaToko[0],
-        'JenisToko' => 'Bangunan',
-        'PemilikToko' => 'RezalH'
-    ],
-    [
-        'Toko' => 'Kedua',
-        'NamaToko' => $namaToko[1],
-        'JenisToko' => 'Elektronik',
-        'PemilikToko' => 'Totok AN'
-    ],
-    [
-        'Toko' => 'Ketiga',
-        'NamaToko' => $namaToko[2],
-        'JenisToko' => 'Fashion',
-        'PemilikToko' => 'Wulan'
-    ],
-];
-
+include('./dataToko.php');
 include('../header.php');
 ?>
 
@@ -35,5 +11,4 @@ include('../header.php');
     Pemilik Toko : <?= $_GET['PemilikToko'] ?><br>
 </div>
 
-<?php 
-include('../footer.php') ?>
+<?php include('../footer.php') ?>
