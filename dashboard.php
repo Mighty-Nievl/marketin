@@ -1,7 +1,7 @@
 <?php
 $title = 'Dashboard';
-include('inc/header.php');
-include('../marketin/inc/dashboard/dataToko.php');
+include('./inc/header.php');
+include('./inc/dashboard/dataToko.php');
 ?>
 
 <h4>
@@ -14,17 +14,14 @@ include('../marketin/inc/dashboard/dataToko.php');
 
 <div class="daftar-toko">
     <ul>
-        <?php foreach ($daftarToko as $dt) : ?>
-            <li>
-                <a href="">
-                    <?= $dt; ?>
-                </a>
-            </li>
+        <?php foreach ($toko as $t) : ?>
+        <li>
+            <a href="./inc/dashboard/detailToko.php?Toko=<?= $t['Toko'] ?>">
+                <?= $t['Toko']; ?>
+            </a>
+        </li>
         <?php endforeach; ?>
     </ul>
 </div>
-
-
-
 
 <?php include('inc/footer.php'); ?>
