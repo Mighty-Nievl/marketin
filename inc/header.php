@@ -1,5 +1,7 @@
 <?php
 $marketin = '<b class="marketin">Marketin!</b>';
+require('db.php');
+// require('function.php');
 ?>
 
 <!DOCTYPE html>
