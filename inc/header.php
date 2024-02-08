@@ -1,7 +1,6 @@
 <?php
 $marketin = '<b class="marketin">Marketin!</b>';
 require('db.php');
-// require('function.php');
 ?>
 
 <!DOCTYPE html>
@@ -19,18 +18,19 @@ require('db.php');
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="">
-                <img src="/marketin/img/banner.svg" alt="Logo" />
-            </a>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="/marketin/img/banner.svg" alt="Logo" />
+                </a>
+            </div>
+            <div class="nav">
+                <a href="/marketin/index.php">Home</a>
+                |
+                <a href="/marketin/about.php">About</a>
+                |
+                <a href="/marketin/dashboard.php">Dashboard</a>
+            </div>
         </div>
-        <div class="nav">
-            <a href="/marketin/home.php">Home</a>
-            |
-            <a href="/marketin/about.php">About</a>
-            |
-            <a href="/marketin/dashboard.php">Dashboard</a>
-        </div>
-    </div>
-    <div class="main">
+        <div class="main">

@@ -3,7 +3,9 @@ $title = 'Error 404!';
 include('inc/header.php');
 ?>
 
-<h1>404 - Error!</h1>
-Maaf, halaman tidak ditemukan 😫
+<div class="error">
+    <h1>404 - Error!</h1>
+    Halaman tidak ditemukan 😫
+</div>
 
 <?php include('inc/footer.php'); ?>

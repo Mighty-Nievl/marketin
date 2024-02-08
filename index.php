@@ -53,7 +53,7 @@ Kelola usahamu disini
                 <path d="M657.7 505.9H368.8c-25.6 0-46.3-20.8-46.3-46.3V342.4c0-25.5 20.8-46.3 46.3-46.3h288.9c25.6 0 46.3 20.8 46.3 46.3v117.2c0 25.5-20.8 46.3-46.3 46.3zM368.8 342.4v117.2h288.9V342.4H368.8zM345.6 666.7h335.2c12.8 0 23.2 10.4 23.2 23.2 0 12.8-10.4 23.2-23.2 23.2H345.6c-12.8 0-23.2-10.4-23.2-23.2 0-12.8 10.4-23.2 23.2-23.2zM438.3 562.5h144.5c12.8 0 23.2 10.4 23.2 23.2 0 12.8-10.4 23.2-23.2 23.2H438.3c-12.8 0-23.2-10.4-23.2-23.2 0-12.9 10.4-23.2 23.2-23.2z" fill="#333333" />
             </svg>
             <p>
-                Kemudahan mengelola stock barang di <?= $marketin ?> selalu jadi solusi. Mulai dari barang masuk, barang keluar, hingga pengingat jumlah stock.
+                Kemudahan dalam mengelola stock barang di <?= $marketin ?> selalu jadi solusi.
             </p>
         </li>
     </ul>

@@ -1,6 +1,12 @@
 <?php
-// koneksi ke Database
-$conn = mysqli_connect("localhost", "root", "", "marketin");
+function query($query) {
+    $conn = mysqli_connect("localhost", "root", "", "marketin");
+    $result = mysqli_query($conn, $query);
+    $rows = [];
+    while ($row = mysqli_fetch_array($result)) {
+        $rows[] = $row;
+    }
+    return $rows;
+}
 
-// Ambil data dari Database / query data toko
-$result = mysqli_query($conn, "SELECT * FROM data_toko");
+$toko = query('SELECT * FROM data_toko');
