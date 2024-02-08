@@ -10,8 +10,8 @@ include('inc/header.php');
     <?php foreach ($toko as $t) : ?>
         <ul>
             <li>
-                <a href="./inc/dashboard/detail.php?id=<?= $t['id']; ?>&Urutan=<?= $t['Urutan']; ?>&Nama=<?= $t['Nama']; ?>&Jenis=<?= $t['Jenis']; ?>&Pemilik=<?= $t['Pemilik']; ?>">
-                    <?= $t['Nama']; ?>
+                <a href="./inc/dashboard/detail.php?id=<?= $t['id']; ?>&nama=<?= $t['nama']; ?>&jenis=<?= $t['jenis']; ?>&pemilik=<?= $t['pemilik']; ?>">
+                    <?= $t['nama']; ?>
                 </a>
             </li>
         </ul>
